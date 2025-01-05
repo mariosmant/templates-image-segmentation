@@ -8,16 +8,16 @@ import numpy as np
 
 # Constants
 classes = 42
-BATCH_SIZE = 12
-BUFFER_SIZE = 140
+BATCH_SIZE = 11
+BUFFER_SIZE = 142
 IMG_SIZE = (256, 256)
 IMAGES_PATH = 'png_images'
 MASKS_PATH = 'png_masks_8bit'
 MASKS_DATA_TYPE = tf.uint8 # Use tf.unit8 for 8-bit and tf.unit16 for 16-bit.
-FROZEN_EPOCHS = 10
-UNFROZEN_EPOCHS = 90
-FROZEN_LR = 2e-7
-UNFROZEN_LR = 0.2e-7
+FROZEN_EPOCHS = 50
+UNFROZEN_EPOCHS = 150
+FROZEN_LR = 0.4e-7
+UNFROZEN_LR = 0.07e-7
 
 
 # Load image and mask paths
