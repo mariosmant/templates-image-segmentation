@@ -77,12 +77,19 @@ python3 -m pip install -r requirements.txt
 - Add in `jpg_images` the train/test datasets' images (.jpg).
 - Add in `png_masks` the images with masks corresponding to images in jpg_images (should have the same filename with jpg_images, except extension is .png).
 
+# Preprocess Images
+## Combined
+```python3 preprocess_images.py```
 
-# Convert jpg_images to png_images and clean ICC profile from PNGs in png_images and png_masks
+## Manually
+### Convert jpg_images to png_images and clean ICC profile from PNGs in png_images and png_masks
 ```python3 convert_to_png_and_clean.py```
 
-# Convert png_masks to grayscale images with intensities representing classes in folder png_masks_8bit as 8-bit depth, with values 0 - 255 (or 16-bit depth in folder png_masks_16bit, if needed for more that 256 classes - including background class 0)
+### Convert png_masks to grayscale images with intensities representing classes in folder png_masks_8bit as 8-bit depth, with values 0 - 255 (or 16-bit depth in folder png_masks_16bit, if needed for more that 256 classes - including background class 0)
 ```python3 convert_masks_to_grayscale.py```
 
 # Run image segmentation
 ```python3 segmentation.py```
+
+# TensorBoard
+```tensorboard --logdir=model/custom-model/logs```

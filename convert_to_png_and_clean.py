@@ -2,9 +2,9 @@ import os
 from PIL import Image
 
 # Paths to the folders
-jpg_input_folder = 'jpg_images'
-png_masks_folder = 'png_masks'
-output_folder = 'png_images'  # Folder where PNG images will be saved
+jpg_input_folder = 'dataset/jpg_images'
+png_masks_folder = 'dataset/png_masks_8bit'
+output_folder = 'dataset/png_images'  # Folder where PNG images will be saved
 
 # Create the output folder if it doesn't exist
 if not os.path.exists(output_folder):
