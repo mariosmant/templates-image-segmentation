@@ -1,11 +1,4 @@
 figures
 predictions
 model
-jpg_images
-png_images
-png_masks
-png_masks_8bit
-png_masks_16bit
-label_map_colors_8.txt
-labelmap.txt
 dataset
